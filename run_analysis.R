@@ -53,3 +53,6 @@ fixcols <- colnames(tidy)
 fixcols[1] <- 'ID'
 fixcols[2] <- 'Activity'
 colnames(tidy) <- fixcols
+
+# uncomment if you wish to write the output file to the working directory
+# write.table(tidy, file='tidydataset.txt', row.names = FALSE)
