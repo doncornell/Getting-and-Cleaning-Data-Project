@@ -48,7 +48,7 @@ mdf_filtered[,2] <- ifelse(mdf_filtered[,2]==1, "WALKING",
 # already done - see step 2.2
 
 # STEP 5: CREATE A TIDY DATASET WITH THE AVERAGE OF EACH VARIABLE FOR EACH ACTIVITY AND EACH SUBJECT
-tidy <- aggregate(mdf_filtered[,3:79], list(mdf_filtered$ID, mdf_filtered$Activity), FUN=mean)
+tidy <- aggregate(mdf_filtered[,3:81], list(mdf_filtered$ID, mdf_filtered$Activity), FUN=mean)
 fixcols <- colnames(tidy)
 fixcols[1] <- 'ID'
 fixcols[2] <- 'Activity'
