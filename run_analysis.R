@@ -1,4 +1,4 @@
-library("plyr")
+# Updated for December session of Getting and Cleaning Data
 
 # STEP 1: MERGE THE TRAINING AND TEST DATA SETS TO CREATE ONE DATA SET
 
